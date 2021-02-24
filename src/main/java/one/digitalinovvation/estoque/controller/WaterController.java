@@ -23,7 +23,7 @@ public class WaterController {
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
-    public WaterDto createBeer(@RequestBody @Valid WaterDto waterDto) throws WaterAlreadyRegisteredException {
+    public WaterDto createWater(@RequestBody @Valid WaterDto waterDto) throws WaterAlreadyRegisteredException {
         return waterService.createWater(waterDto);
     }
 
